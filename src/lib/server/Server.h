@@ -10,6 +10,7 @@
 
 #include "base/Event.h"
 #include "base/Stopwatch.h"
+#include "common/NavigationTypes.h"
 #include "common/NetworkProtocol.h"
 #include "deskflow/Clipboard.h"
 #include "deskflow/ClipboardTypes.h"
@@ -315,6 +316,7 @@ private:
   void handleKeyRepeatEvent(const Event &event);
   void handleButtonDownEvent(const Event &event);
   void handleButtonUpEvent(const Event &event);
+  void handleNavigationGestureEvent(const Event &event);
   void handleMotionPrimaryEvent(const Event &event);
   void handleMotionSecondaryEvent(const Event &event);
   void handleWheelEvent(const Event &event);
@@ -336,6 +338,7 @@ private:
   void onKeyRepeat(KeyID, KeyModifierMask, int32_t, KeyButton, const std::string &);
   void onMouseDown(ButtonID);
   void onMouseUp(ButtonID);
+  void onNavigationGesture(NavigationActionSlot action);
   bool onMouseMovePrimary(int32_t x, int32_t y);
   void onMouseMoveSecondary(int32_t dx, int32_t dy);
   void onMouseWheel(int32_t xDelta, int32_t yDelta);

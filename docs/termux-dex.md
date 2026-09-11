@@ -5,7 +5,7 @@ SPDX-License-Identifier: GPL-2.0-only WITH LicenseRef-OpenSSL-Exception
 
 # Termux and Samsung DeX client (experimental)
 
-This branch can run the Deskflow client natively in Termux and control the
+The default `andy-custom` branch can run the Deskflow client natively in Termux and control the
 Android or Samsung DeX desktop without installing an Android APK.
 
 ## What is and is not possible

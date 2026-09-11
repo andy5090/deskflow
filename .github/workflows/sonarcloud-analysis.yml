@@ -14,7 +14,7 @@ on:
       - '!src/res/**'
       - '!src/unittests/**'
   push:
-    branches: [master]
+    branches: [master, andy-custom]
     paths:
       - '.github/workflows/codeql-analysis.yml'
       - 'cmake/Libraries.cmake'
